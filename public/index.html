@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="img/calc-icon.ico" type="image/x-icon">
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+    <main>
+        <div class="calc-body">
+            <div class="calc-title">Tip Calculator</div>
+
+            <div class="calc-form">
+                <form>
+                    <div>
+                        <label for="idValorConta">
+                            <span>Quanto ficou sua conta?</span>
+                        </label><br>
+
+                        <input type="text" name="ValorConta" id="idValorConta" placeholder="$">
+                    </div>
+
+                    <div>
+                        <label for="idGorjeta">
+                            <span>Como foi o serviço?</span>
+                        </label><br>
+
+                        <select name="Gorjeta" id="idGorjeta">
+                            <option value="0%">0%</option>
+                            <option value="5%">5%</option>
+                            <option value="10%" selected>10%</option>
+                            <option value="15%">15%</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="idPessoas">
+                            <span>Vai dividir com quantas pessoas?</span>
+                        </label><br>
+
+                        <input type="text" name="Pessoas" id="idPessoas" placeholder="2">
+                    </div>
+                </form>
+            </div>
+
+            <div class="calc-btn">
+                <button>Calcular</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

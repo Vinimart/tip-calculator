@@ -1,0 +1,77 @@
+body {
+    background-color: #212121;
+    color: #212121;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 25px;
+    background-color: #FFFFFF;
+    color: #5597fc;
+    border: solid 1px #5597fc;
+    border-radius: 0.3em;
+    padding: 0.5em 2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5597fc;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+span,
+p,
+a,
+input, select {
+    font-size: 20px;
+}
+
+input,
+select {
+    text-align: left;
+    width: 90%;
+    padding: 15px 0px 15px 15px;
+    display: inline-block;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin: 0.5em 0 2em 0;
+}
+
+.calc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20em;
+    height: 34em;
+    margin-top: 2em;
+    border-radius: 1em;
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+
+.calc-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    background-color: #5597fc;
+    color: #FFFFFF;
+}
+
+.calc-form div {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.calc-btn {
+    text-align: center;
+}
