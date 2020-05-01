@@ -10,7 +10,7 @@
     <title>Calculadora de Gorjeta</title>
 </head>
 
-<body>
+<body onload="formulaController.update()">
     <main>
         <div class="calc-body">
             <div class="calc-title">Tip Calculator</div>
@@ -22,7 +22,7 @@
                             <span>Quanto ficou sua conta?</span>
                         </label><br>
 
-                        <input type="text" name="ValorConta" id="idConta" placeholder="$" value="100" oninput="formulaController.getConta()">
+                        <input type="text" name="ValorConta" id="idConta" placeholder="$" value="100" oninput="formulaController.getConta(); formulaController.update()">
                     </div>
 
                     <div>
@@ -30,8 +30,8 @@
                             <span>Como foi o serviço?</span>
                         </label><br>
 
-                        <select name="Gorjeta" id="idTip" onchange="formulaController.getTip()">
-                            <option value="0">0%</option>
+                        <select name="Gorjeta" id="idTip" onchange="formulaController.getTip(); formulaController.update()">
+                            <option value="1">0%</option>
                             <option value="1.05">5%</option>
                             <option value="1.1" selected>10%</option>
                             <option value="1.15">15%</option>
@@ -43,21 +43,20 @@
                             <span>Vai dividir com quantas pessoas?</span>
                         </label><br>
 
-                        <input type="text" name="Pessoas" id="idPessoas" value="2" oninput="formulaController.getPessoas()">
+                        <input type="text" name="Pessoas" id="idPessoas" value="2" oninput="formulaController.getPessoas(); formulaController.update()">
                     </div>
                 </form>
             </div>
 
-            <div class="calc-result">
-                <span id="idCalcResult">
-                    R$ 552.75
-                </span>
+            <div id="idCalcResult" class="calc-result">
+
             </div>
         </div>
     </main>
 
     <script src="src/FormulaModel.js"></script>
     <script src="src/FormulaController.js"></script>
+    <script src="src/FormulaView.js"></script>
 
     <script>
         let formulaController = new FormulaController();

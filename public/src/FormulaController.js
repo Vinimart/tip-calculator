@@ -27,12 +27,17 @@ class FormulaController {
 
     setProps() {
 
-        let formula = new FormulaModel(
+        this.formulaModel = new FormulaModel(
             this.getConta(),
             this.getTip(),
             this.getPessoas()
         )
+        return this.formulaModel.resultado()
+    }
 
-        return formula.resultado()
+    update() {
+
+        this.formulaView = new FormulaView(document.getElementById('idCalcResult'))
+        return this.formulaView.update(this.setProps())
     }
 }
