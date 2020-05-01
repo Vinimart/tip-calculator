@@ -11,16 +11,6 @@ main {
     align-items: center;
 }
 
-button {
-    font-size: 25px;
-    background-color: #FFFFFF;
-    color: #5597fc;
-    border: solid 1px #5597fc;
-    border-radius: 0.3em;
-    padding: 0.5em 2em;
-    cursor: pointer;
-}
-
 button:hover {
     background-color: #5597fc;
     color: #FFFFFF;
@@ -67,11 +57,3 @@ select {
     color: #FFFFFF;
 }
 
-.calc-form div {
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.calc-btn {
-    text-align: center;
-}

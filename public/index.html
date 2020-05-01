@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="img/calc-icon.ico" type="image/x-icon">
     <title>Calculadora de Gorjeta</title>
 </head>
+
 <body>
     <main>
         <div class="calc-body">
@@ -20,7 +22,7 @@
                             <span>Quanto ficou sua conta?</span>
                         </label><br>
 
-                        <input type="text" name="ValorConta" id="idValorConta" placeholder="$">
+                        <input type="text" name="ValorConta" id="idConta" placeholder="$" value="100" oninput="formulaController.getConta()">
                     </div>
 
                     <div>
@@ -28,11 +30,11 @@
                             <span>Como foi o serviço?</span>
                         </label><br>
 
-                        <select name="Gorjeta" id="idGorjeta">
-                            <option value="0%">0%</option>
-                            <option value="5%">5%</option>
-                            <option value="10%" selected>10%</option>
-                            <option value="15%">15%</option>
+                        <select name="Gorjeta" id="idTip" onchange="formulaController.getTip()">
+                            <option value="0">0%</option>
+                            <option value="1.05">5%</option>
+                            <option value="1.1" selected>10%</option>
+                            <option value="1.15">15%</option>
                         </select>
                     </div>
 
@@ -41,15 +43,24 @@
                             <span>Vai dividir com quantas pessoas?</span>
                         </label><br>
 
-                        <input type="text" name="Pessoas" id="idPessoas" placeholder="2">
+                        <input type="text" name="Pessoas" id="idPessoas" value="2" oninput="formulaController.getPessoas()">
                     </div>
                 </form>
             </div>
 
-            <div class="calc-btn">
-                <button>Calcular</button>
+            <div class="calc-result">
+                <span>Resultado: </span>
+                <span id="idCalcResult"></span>
             </div>
         </div>
     </main>
+
+    <script src="src/FormulaModel.js"></script>
+    <script src="src/FormulaController.js"></script>
+
+    <script>
+        let formulaController = new FormulaController();
+    </script>
 </body>
+
 </html>
