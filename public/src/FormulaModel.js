@@ -7,8 +7,6 @@ class FormulaModel {
         this._pessoas = pessoas
     }
 
-    
-
     operacao() {
 
         this._resultado = (this._conta * this._tip) / this._pessoas

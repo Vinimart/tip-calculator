@@ -22,7 +22,8 @@
                             <span>Quanto ficou sua conta?</span>
                         </label><br>
 
-                        <input type="text" name="ValorConta" id="idConta" placeholder="$" value="100" oninput="formulaController.getConta(); formulaController.update()">
+                        <input type="text" name="ValorConta" id="idConta" placeholder="$" value="100" autocomplete="off"
+                            oninput="formulaController.getConta(); formulaController.update()">
                     </div>
 
                     <div>
@@ -30,7 +31,8 @@
                             <span>Como foi o serviço?</span>
                         </label><br>
 
-                        <select name="Gorjeta" id="idTip" onchange="formulaController.getTip(); formulaController.update()">
+                        <select name="Gorjeta" id="idTip"
+                            onchange="formulaController.getTip(); formulaController.update()">
                             <option value="1">0%</option>
                             <option value="1.05">5%</option>
                             <option value="1.1" selected>10%</option>
@@ -43,7 +45,8 @@
                             <span>Vai dividir com quantas pessoas?</span>
                         </label><br>
 
-                        <input type="text" name="Pessoas" id="idPessoas" value="2" oninput="formulaController.getPessoas(); formulaController.update()">
+                        <input type="text" name="Pessoas" id="idPessoas" value="2" autocomplete="off"
+                            oninput="formulaController.getPessoas(); formulaController.update()">
                     </div>
                 </form>
             </div>
