@@ -57,3 +57,11 @@ select {
     color: #FFFFFF;
 }
 
+.calc-result {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.calc-result span {
+    font-size: 45px;
+}
