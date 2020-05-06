@@ -1,67 +1,68 @@
 body {
-    background-color: #212121;
-    color: #212121;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    box-sizing: border-box;
+  background-color: #212121;
+  color: #212121;
+  font-family: "Ubuntu Condensed", sans-serif;
+  box-sizing: border-box;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
-    background-color: #5597fc;
-    color: #FFFFFF;
-    transition: 0.5s;
+  background-color: #5597fc;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
 span,
 p,
 a,
-input, select {
-    font-size: 20px;
+input,
+select {
+  font-size: 20px;
 }
 
 input,
 select {
-    text-align: left;
-    width: 90%;
-    padding: 15px 0px 15px 15px;
-    display: inline-block;
-    border: 1px solid #CCCCCC;
-    border-radius: 5px;
-    margin: 0.5em 0 2em 0;
+  text-align: left;
+  width: 90%;
+  padding: 15px 0px 15px 15px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 0.5em 0 2em 0;
 }
 
 .calc-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20em;
-    height: 34em;
-    margin-top: 2em;
-    border-radius: 1em;
-    background-color: #FFFFFF;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20em;
+  height: 34em;
+  margin-top: 2em;
+  border-radius: 1em;
+  background-color: #ffffff;
+  padding: 1em;
 }
 
 .calc-title {
-    text-align: center;
-    font-size: 30px;
-    padding: 0.3em;
-    margin-bottom: 1em;
-    border-radius: 0.5em;
-    background-color: #5597fc;
-    color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 0.3em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  background-color: #5597fc;
+  color: #ffffff;
 }
 
 .calc-result {
-    text-align: center;
-    margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .calc-result span {
-    font-size: 45px;
+  font-size: 45px;
 }

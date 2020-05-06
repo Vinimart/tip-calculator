@@ -1,21 +1,17 @@
 class FormulaView {
+  constructor(element) {
+    this._element = element;
+  }
 
-    constructor(element) {
-
-        this._element = element
-    }
-
-    template(model) {
-
-        return `
+  template(model) {
+    return `
             <span>
                 ${model}
             </span>
-        `
-    }
+        `;
+  }
 
-    update(model) {
-
-        this._element.innerHTML = this.template(model)
-    }
+  update(model) {
+    this._element.innerHTML = this.template(model);
+  }
 }
