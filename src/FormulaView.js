@@ -5,10 +5,10 @@ class FormulaView {
 
   template(model) {
     return `
-            <span>
-                ${model}
-            </span>
-        `;
+          <span>
+              ${model}
+          </span>
+      `;
   }
 
   update(model) {

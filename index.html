@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/style.css">
     <link rel="shortcut icon" href="img/calc-icon.ico" type="image/x-icon">
     <title>Calculadora de Gorjeta</title>
@@ -22,7 +23,8 @@
                             <span>Quanto ficou sua conta?</span>
                         </label><br>
 
-                        <input type="text" name="ValorConta" id="idConta" placeholder="$" value="100" autocomplete="off"
+                        <input type="text" name="ValorConta" id="idConta" placeholder="R$" value="100"
+                            autocomplete="off" maxlength="10"
                             oninput="formulaController.getConta(); formulaController.update()">
                     </div>
 
@@ -42,10 +44,11 @@
 
                     <div>
                         <label for="idPessoas">
-                            <span>Vai dividir com quantas pessoas?</span>
+                            <span>Quantas pessoas?</span>
                         </label><br>
 
-                        <input type="text" name="Pessoas" id="idPessoas" value="2" autocomplete="off"
+                        <input type="text" name="Pessoas" id="idPessoas" value="2" autocomplete="off" maxlength="3"
+                            placeholder="&#xF007;" style="font-family:Arial, FontAwesome"
                             oninput="formulaController.getPessoas(); formulaController.update()">
                     </div>
                 </form>

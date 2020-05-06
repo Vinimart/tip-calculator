@@ -20,7 +20,7 @@ class FormulaController {
     return this.inputPessoas;
   }
 
-  setProps() {
+  setModel() {
     this.formulaModel = new FormulaModel(
       this.getConta(),
       this.getTip(),
@@ -31,6 +31,6 @@ class FormulaController {
 
   update() {
     this.formulaView = new FormulaView(document.getElementById("idCalcResult"));
-    return this.formulaView.update(this.setProps());
+    return this.formulaView.update(this.setModel());
   }
 }
