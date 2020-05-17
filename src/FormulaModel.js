@@ -6,7 +6,7 @@ class FormulaModel {
   }
 
   commaToDot() {
-    this._conta = this._conta.replace(",", ".");
+    this._conta = this._conta.replace(',', '.');
 
     return parseFloat(this._conta);
   }
@@ -25,9 +25,9 @@ class FormulaModel {
     this._resultado = (this.commaToDot() * this._tip) / this.pessoasNotBlank();
 
     if (this._resultado) {
-      return `R$ ${this._resultado.toFixed(2).replace(".", ",")}`;
+      return `R$ ${this._resultado.toFixed(2).replace('.', ',')}`;
     } else {
-      return "&nbsp";
+      return '&nbsp';
     }
   }
 
